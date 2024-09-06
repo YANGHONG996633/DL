@@ -1,0 +1,113 @@
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1         [-1, 64, 112, 112]           3,200
+       BatchNorm2d-2         [-1, 64, 112, 112]             128
+         MaxPool2d-3         [-1, 64, 112, 112]               0
+            Conv2d-4         [-1, 64, 112, 112]          36,928
+       BatchNorm2d-5         [-1, 64, 112, 112]             128
+              ReLU-6         [-1, 64, 112, 112]               0
+            Conv2d-7         [-1, 64, 112, 112]          36,928
+       BatchNorm2d-8         [-1, 64, 112, 112]             128
+              ReLU-9         [-1, 64, 112, 112]               0
+         Residual-10         [-1, 64, 112, 112]               0
+           Conv2d-11         [-1, 64, 112, 112]          36,928
+      BatchNorm2d-12         [-1, 64, 112, 112]             128
+             ReLU-13         [-1, 64, 112, 112]               0
+           Conv2d-14         [-1, 64, 112, 112]          36,928
+      BatchNorm2d-15         [-1, 64, 112, 112]             128
+             ReLU-16         [-1, 64, 112, 112]               0
+         Residual-17         [-1, 64, 112, 112]               0
+           Conv2d-18          [-1, 128, 56, 56]          73,856
+      BatchNorm2d-19          [-1, 128, 56, 56]             256
+             ReLU-20          [-1, 128, 56, 56]               0
+           Conv2d-21          [-1, 128, 56, 56]         147,584
+      BatchNorm2d-22          [-1, 128, 56, 56]             256
+           Conv2d-23          [-1, 128, 56, 56]           8,320
+             ReLU-24          [-1, 128, 56, 56]               0
+         Residual-25          [-1, 128, 56, 56]               0
+           Conv2d-26          [-1, 128, 56, 56]         147,584
+      BatchNorm2d-27          [-1, 128, 56, 56]             256
+             ReLU-28          [-1, 128, 56, 56]               0
+           Conv2d-29          [-1, 128, 56, 56]         147,584
+      BatchNorm2d-30          [-1, 128, 56, 56]             256
+             ReLU-31          [-1, 128, 56, 56]               0
+         Residual-32          [-1, 128, 56, 56]               0
+           Conv2d-33          [-1, 256, 28, 28]         295,168
+      BatchNorm2d-34          [-1, 256, 28, 28]             512
+             ReLU-35          [-1, 256, 28, 28]               0
+           Conv2d-36          [-1, 256, 28, 28]         590,080
+      BatchNorm2d-37          [-1, 256, 28, 28]             512
+           Conv2d-38          [-1, 256, 28, 28]          33,024
+             ReLU-39          [-1, 256, 28, 28]               0
+         Residual-40          [-1, 256, 28, 28]               0
+           Conv2d-41          [-1, 256, 28, 28]         590,080
+      BatchNorm2d-42          [-1, 256, 28, 28]             512
+             ReLU-43          [-1, 256, 28, 28]               0
+           Conv2d-44          [-1, 256, 28, 28]         590,080
+      BatchNorm2d-45          [-1, 256, 28, 28]             512
+             ReLU-46          [-1, 256, 28, 28]               0
+         Residual-47          [-1, 256, 28, 28]               0
+           Conv2d-48          [-1, 512, 14, 14]       1,180,160
+      BatchNorm2d-49          [-1, 512, 14, 14]           1,024
+             ReLU-50          [-1, 512, 14, 14]               0
+           Conv2d-51          [-1, 512, 14, 14]       2,359,808
+      BatchNorm2d-52          [-1, 512, 14, 14]           1,024
+           Conv2d-53          [-1, 512, 14, 14]         131,584
+             ReLU-54          [-1, 512, 14, 14]               0
+         Residual-55          [-1, 512, 14, 14]               0
+           Conv2d-56          [-1, 512, 14, 14]       2,359,808
+      BatchNorm2d-57          [-1, 512, 14, 14]           1,024
+             ReLU-58          [-1, 512, 14, 14]               0
+           Conv2d-59          [-1, 512, 14, 14]       2,359,808
+      BatchNorm2d-60          [-1, 512, 14, 14]           1,024
+             ReLU-61          [-1, 512, 14, 14]               0
+         Residual-62          [-1, 512, 14, 14]               0
+           Conv2d-63           [-1, 1024, 7, 7]       4,719,616
+      BatchNorm2d-64           [-1, 1024, 7, 7]           2,048
+             ReLU-65           [-1, 1024, 7, 7]               0
+           Conv2d-66           [-1, 1024, 7, 7]       9,438,208
+      BatchNorm2d-67           [-1, 1024, 7, 7]           2,048
+           Conv2d-68           [-1, 1024, 7, 7]         525,312
+             ReLU-69           [-1, 1024, 7, 7]               0
+         Residual-70           [-1, 1024, 7, 7]               0
+           Conv2d-71           [-1, 1024, 7, 7]       9,438,208
+      BatchNorm2d-72           [-1, 1024, 7, 7]           2,048
+             ReLU-73           [-1, 1024, 7, 7]               0
+           Conv2d-74           [-1, 1024, 7, 7]       9,438,208
+      BatchNorm2d-75           [-1, 1024, 7, 7]           2,048
+             ReLU-76           [-1, 1024, 7, 7]               0
+         Residual-77           [-1, 1024, 7, 7]               0
+AdaptiveAvgPool2d-78           [-1, 1024, 1, 1]               0
+          Flatten-79                 [-1, 1024]               0
+           Linear-80                   [-1, 10]          10,250
+================================================================
+Total params: 44,751,242
+Trainable params: 44,751,242
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.19
+Forward/backward pass size (MB): 190.27
+Params size (MB): 170.71
+Estimated Total Size (MB): 361.18
+----------------------------------------------------------------
+epoch:1 train loss:0.4003 train acc:0.8525 val loss:0.3277 val acc:0.8847 time_cost:9m14s lr:0.0001
+epoch:2 train loss:0.2539 train acc:0.9070 val loss:0.2514 val acc:0.9068 time_cost:18m28s lr:0.0001
+epoch:3 train loss:0.2136 train acc:0.9235 val loss:0.2435 val acc:0.9108 time_cost:27m46s lr:0.0001
+epoch:4 train loss:0.1805 train acc:0.9342 val loss:0.1995 val acc:0.9282 time_cost:37m4s lr:0.0001
+epoch:5 train loss:0.1523 train acc:0.9445 val loss:0.2033 val acc:0.9268 time_cost:46m18s lr:0.0001
+epoch:6 train loss:0.1213 train acc:0.9562 val loss:0.2333 val acc:0.9201 time_cost:55m31s lr:0.0001
+epoch:7 train loss:0.0927 train acc:0.9674 val loss:0.1846 val acc:0.9376 time_cost:64m44s lr:0.0001
+epoch:8 train loss:0.0634 train acc:0.9783 val loss:0.2270 val acc:0.9326 time_cost:74m1s lr:0.0001
+epoch:9 train loss:0.0460 train acc:0.9844 val loss:0.2523 val acc:0.9261 time_cost:83m17s lr:0.0001
+epoch:10 train loss:0.0370 train acc:0.9877 val loss:0.2415 val acc:0.9353 time_cost:92m40s lr:0.0001
+epoch:11 train loss:0.0308 train acc:0.9890 val loss:0.2762 val acc:0.9293 time_cost:102m27s lr:0.0001
+epoch:12 train loss:0.0230 train acc:0.9921 val loss:0.2776 val acc:0.9323 time_cost:111m42s lr:0.0001
+epoch:13 train loss:0.0216 train acc:0.9923 val loss:0.2933 val acc:0.9313 time_cost:120m57s lr:0.0001
+epoch:14 train loss:0.0194 train acc:0.9937 val loss:0.2758 val acc:0.9363 time_cost:130m12s lr:0.0001
+epoch:15 train loss:0.0165 train acc:0.9946 val loss:0.2821 val acc:0.9399 time_cost:139m27s lr:0.0001
+epoch:16 train loss:0.0151 train acc:0.9947 val loss:0.3058 val acc:0.9347 time_cost:148m43s lr:0.0001
+epoch:17 train loss:0.0159 train acc:0.9945 val loss:0.2996 val acc:0.9377 time_cost:157m58s lr:0.0001
+epoch:18 train loss:0.0147 train acc:0.9951 val loss:0.2963 val acc:0.9325 time_cost:167m13s lr:0.0001
+epoch:19 train loss:0.0111 train acc:0.9962 val loss:0.3005 val acc:0.9382 time_cost:176m29s lr:0.0001
+epoch:20 train loss:0.0131 train acc:0.9956 val loss:0.2923 val acc:0.9397 time_cost:185m45s lr:0.0001
